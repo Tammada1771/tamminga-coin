@@ -2,7 +2,11 @@
 ----
 **Activate the virtual environment**
 ----
+- Windows
 > blockchain-env/Script/activate
+
+- Mac
+> source blockchain-env/bin/activate
 
 ----
 **Install requirements.txt to begin**
