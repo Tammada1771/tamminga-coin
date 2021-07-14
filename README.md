@@ -1,4 +1,4 @@
-# Tamminga coin
+# Tamminga Coin
 # Proof of Work Consensus
 ----
 **Activate the virtual environment**
