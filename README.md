@@ -1,5 +1,5 @@
-# tamminga-coin
-# Proof of Work Coin
+# Tamminga coin
+# Proof of Work Consensus
 ----
 **Activate the virtual environment**
 ----
