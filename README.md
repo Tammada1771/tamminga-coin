@@ -17,6 +17,6 @@ Packages in the file are
 **Run the tests**
 ----
 
-Make sure to activate the virtual env
+Make sure to activate the virtual environment
 
 >python3 -m pytest backend/tests
