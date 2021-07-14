@@ -1,4 +1,5 @@
 # tamminga-coin
+# Proof of Work Coin
 ----
 **Activate the virtual environment**
 ----
