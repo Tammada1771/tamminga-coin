@@ -24,3 +24,5 @@ Packages in the file are
 Make sure to activate the virtual environment
 
 >python3 -m pytest backend/tests
+
+----
