@@ -13,3 +13,10 @@ Packages in the file are
 - Pip
 - Pytest
 
+----
+**Run the tests**
+----
+
+Make sure to activate the virtual env
+
+>python3 -m pytest backend/tests
