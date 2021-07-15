@@ -1,4 +1,4 @@
-**Welcome to Tamminga Coin**
+**Welcome to Tamminga Coin** --
 **A Proof of Work Blockchain**
 
 ----
