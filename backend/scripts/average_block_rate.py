@@ -17,6 +17,8 @@ for i in range(1000):
 
     average_time = sum(times) / len(times)
 
+    print(f'Block number: {i}')
     print(f'New block difficulty: {blockchain.chain[-1].difficulty}')
+    print(f'New block nonce: {blockchain.chain[-1].nonce}')
     print(f'Time to mine new block: {time_to_mine} Seconds')
     print(f'Average time to add blocks: {average_time} Seconds\n')

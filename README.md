@@ -17,6 +17,7 @@
 Packages in the file are
 - Pip
 - Pytest
+- Flask
 
 ----
 **Run the tests**
