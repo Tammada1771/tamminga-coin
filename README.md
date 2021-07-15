@@ -1,8 +1,13 @@
-# tamminga-coin
+# Tamminga Coin
+# Proof of Work Consensus
 ----
 **Activate the virtual environment**
 ----
+- Windows
 > blockchain-env/Script/activate
+
+- Mac
+> source blockchain-env/bin/activate
 
 ----
 **Install requirements.txt to begin**
@@ -17,6 +22,8 @@ Packages in the file are
 **Run the tests**
 ----
 
-Make sure to activate the virtual env
+Make sure to activate the virtual environment
 
 >python3 -m pytest backend/tests
+
+----
