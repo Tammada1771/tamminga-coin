@@ -1,5 +1,8 @@
-# Tamminga Coin
-# Proof of Work Consensus
+**Welcome to Tamminga Coin**
+**A Proof of Work Blockchain**
+
+----
+First
 ----
 **Activate the virtual environment**
 ----
@@ -10,7 +13,9 @@
 > source blockchain-env/bin/activate
 
 ----
-**Install requirements.txt to begin**
+Then
+----
+**Install requirements.txt**
 ----
 > pip3 install -r requirements.txt
 
@@ -20,11 +25,19 @@ Packages in the file are
 - Flask
 
 ----
-**Run the tests**
+**To Run the tests**
 ----
 
-Make sure to activate the virtual environment
+- Make sure to activate the virtual environment
 
 >python3 -m pytest backend/tests
+
+----
+**To Run the Application and API**
+----
+
+- Make sure to activate the virtual environment
+
+>python3 -m backend.app
 
 ----
