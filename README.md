@@ -23,6 +23,7 @@ Packages in the file are
 - Pip
 - Pytest
 - Flask
+- Pubnub
 
 ----
 **To Run the tests**
