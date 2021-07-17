@@ -10,10 +10,10 @@ Create one
 
 ----
 - Windows
-> blockchain-env/Script/activate
+> env/Script/activate
 
 - Mac
-> source blockchain-env/bin/activate
+> source env/bin/activate
 
 ----
 **Install requirements.txt to begin**
