@@ -2,9 +2,6 @@
 # Proof of Work Consensus
 ----
 **Activate the virtual environment**
-
-- Make one
->python3 -m venv my_venv
 ----
 - Windows
 > blockchain-env/Script/activate
