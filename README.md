@@ -42,3 +42,12 @@ Packages in the file are
 >python3 -m backend.app
 
 ----
+**Run a peer instance**
+----
+- Make sure to activate the virtual environment
+
+MAC
+>export PEER=True && python3 -m backend.app
+
+WINDOWS
+>set PEER=True && python -m backend.app
