@@ -1,3 +1,4 @@
+from typing import ChainMap
 from _pytest.python_api import raises
 from backend.blockchain.block import Block
 
@@ -35,6 +36,12 @@ class Blockchain:
                 f'Cannot replace. The incoming chain is invalid because: {e}')
 
         self.chain = chain
+
+    def to_json(self):
+        """
+        Serialize the blockchain into a list of blocks
+        """
+        return list(map(lambda block: block.to_json(), self.chain))
 
     @staticmethod
     def is_valid_chain(chain):
