@@ -3,6 +3,11 @@
 ----
 **Activate the virtual environment**
 ----
+Create one
+>pip install virtualenv
+>python3 -m virtualenv env
+
+----
 - Windows
 > blockchain-env/Script/activate
 
