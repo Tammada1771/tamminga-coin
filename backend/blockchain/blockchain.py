@@ -1,3 +1,4 @@
+from os import stat
 from typing import ChainMap
 from _pytest.python_api import raises
 from backend.blockchain.block import Block
@@ -42,6 +43,18 @@ class Blockchain:
         Serialize the blockchain into a list of blocks
         """
         return list(map(lambda block: block.to_json(), self.chain))
+
+    @staticmethod
+    def from_json(chain_json):
+        """
+        Deserialize a list of serialized blocks into a blockchain instance.
+        The result will contain a chain list of block instances.
+        """
+        blockchain = Blockchain()
+        blockchain.chain = list(map(
+            lambda block_json: Block.from_json(block_json), chain_json))
+
+        return blockchain
 
     @staticmethod
     def is_valid_chain(chain):
