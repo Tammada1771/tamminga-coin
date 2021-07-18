@@ -7,9 +7,8 @@ First
 **Activate the virtual environment**
 ----
 Create one
->pip install virtualenv
 
->python3 -m virtualenv env
+>python -m venv env
 
 ----
 - Windows
@@ -23,7 +22,7 @@ Then
 ----
 **Install requirements.txt**
 ----
-> pip3 install -r requirements.txt
+> pip install -r requirements.txt
 
 Packages in the file are
 - Pip
@@ -37,7 +36,7 @@ Packages in the file are
 
 - Make sure to activate the virtual environment
 
->python3 -m pytest backend/tests
+>python -m pytest backend/tests
 
 ----
 **To Run the Application and API**
@@ -45,7 +44,7 @@ Packages in the file are
 
 - Make sure to activate the virtual environment
 
->python3 -m backend.app
+>python -m backend.app
 
 ----
 **Run a peer instance**
@@ -55,5 +54,10 @@ Packages in the file are
 MAC
 >export PEER=True && python3 -m backend.app
 
-WINDOWS
->set PEER=True && python -m backend.app
+WINDOWS -CMD
+>set PEER PEER=True && python -m backend.app
+
+WINDOWS - Powershell
+>$env:PEER = 'True'; python -m backend.app
+
+
