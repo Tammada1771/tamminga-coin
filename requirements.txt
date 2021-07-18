@@ -2,3 +2,4 @@ pip==21.1.1
 pytest==6.2.4
 Flask==2.0.1
 pubnub==4.1.6
+requests==2.26.0
