@@ -9,14 +9,14 @@ class Transaction:
     Document of an exchange in currency from a sender to one or more recipients
     """
 
-    def __init__(self, sender_wallet, recipient, amount):
-        self.id = str(uuid.uuid4())[0:8]
-        self.output = self.create_output(
+    def __init__(self, sender_wallet=None, recipient=None, amount=None, id=None, output=None, input=None):
+        self.id = id or str(uuid.uuid4())[0:8]
+        self.output = output or self.create_output(
             sender_wallet,
             recipient,
             amount
         )
-        self.input = self.create_input(sender_wallet, self.output)
+        self.input = input or self.create_input(sender_wallet, self.output)
 
     def create_output(self, sender_wallet, recipient, amount):
         """
@@ -66,6 +66,13 @@ class Transaction:
         return self.__dict__
 
     @staticmethod
+    def from_json(transaction_json):
+        """
+        Deserialize a transactions json representation back into a transaction instance
+        """
+        return Transaction(**transaction_json)
+
+    @staticmethod
     def is_valid_transaction(transaction):
         """
         Validate a transaction. Raise an exception for invalid transactions.
@@ -85,7 +92,13 @@ class Transaction:
 
 def main():
     transaction = Transaction(Wallet(), 'recipient', 15)
+    transaction2 = Transaction(Wallet(), 'recipient', 10)
     print(f'Transaction: {transaction.__dict__}')
+    print(f'Transaction2: {transaction2.__dict__}')
+
+    transaction_json = transaction.to_json()
+    restored_transaction = Transaction.from_json(transaction_json)
+    print(f'Restored_Transaction: {restored_transaction.__dict__}')
 
 
 if __name__ == '__main__':
