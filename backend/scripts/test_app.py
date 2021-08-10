@@ -30,6 +30,8 @@ def main():
     post_wallet_transact_1 = post_wallet_transact(recipient, 21)
     print(f'\nPost wallet transact: {post_wallet_transact_1}')
 
+    time.sleep(1)
+
     post_wallet_transact_2 = post_wallet_transact(recipient, 12)
     print(f'\nPost wallet transact 2: {post_wallet_transact_2}')
 
