@@ -1,7 +1,9 @@
+from os import stat
 import uuid
 import time
 
 from backend.wallet.wallet import Wallet
+from backend.config import MINING_REWARD, MINING_REWARD_INPUT
 
 
 class Transaction:
@@ -88,6 +90,16 @@ class Transaction:
             transaction.input['signature']
         ):
             raise Exception('Invalid signature')
+
+    @staticmethod
+    def reward_transaction(miner_wallet):
+        """
+        Generate a reward transaction that award the miner
+        """
+        output = {}
+        output[miner_wallet.address] = MINING_REWARD
+
+        return Transaction(input=MINING_REWARD_INPUT, output=output)
 
 
 def main():
