@@ -60,4 +60,11 @@ WINDOWS -CMD
 WINDOWS - Powershell
 >$env:PEER = 'True'; python -m backend.app
 
+----
+**Run the Frontend**
+----
+
+In the frontend directory:
+
+>npm run start
 
